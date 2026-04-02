@@ -406,7 +406,7 @@ export default function Home() {
             <img src="/logos/ghost-builder.png" alt="Ghost Builder" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
             <img src="/logos/otto.png" alt="Otto" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
             <img src="/logos/creator-army.png" alt="Creator Army" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
-            <img src="/logos/beard-com.png" alt="Beard.Com" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/beard-com.png" alt="Beard.Com" className="h-6 md:h-7 w-auto opacity-70 hover:opacity-100 transition-opacity" />
             <img src="/logos/finishr.png" alt="Finishr" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
             <img src="/logos/cao-v1.png" alt="CAO Partners" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
           </div>
