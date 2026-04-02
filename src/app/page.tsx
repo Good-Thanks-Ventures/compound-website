@@ -191,7 +191,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pb-24 md:pb-10">
-          <p className="font-black text-xs tracking-[0.4em] uppercase text-[#fafafa]/60 mb-10">COMPOUND</p>
+          <img src="/logos/compound.png" alt="Compound" className="h-6 md:h-8 w-auto mx-auto mb-10 opacity-60" />
           <h1 className="text-[clamp(3rem,10vw,6.5rem)] font-black leading-[1.05] tracking-tight mb-6 text-[#fafafa]">
             The Design Eye Behind $1B+ in Streetwear.
             <br />
@@ -214,12 +214,9 @@ export default function Home() {
             Most businesses pay $10K+ for brand identity that takes 6 weeks. We build yours in 48 hours. $995.
           </p>
 
-          <p className="text-muted text-base md:text-lg max-w-xl mx-auto mb-6 leading-relaxed">
-          </p>
-
           <div className="mb-4">
             <ShineBorder color={['#c5d82d', '#a8b820', '#d4e645']} borderRadius={0} className="inline-grid p-0">
-              <FlowButton text="Book Your Session" href="#pricing" className="rounded-none" />
+              <FlowButton text="Book Your Session" href="https://buy.stripe.com/5kQ6oHdwz2bXbJn4oE2wU01" className="rounded-none" />
             </ShineBorder>
           </div>
 
@@ -404,20 +401,14 @@ export default function Home() {
           <p className="text-accent text-xs font-bold tracking-[0.4em] uppercase mb-8">
             Already Built For
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16">
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">One Life Club</span>
-            <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Ghost Builder</span>
-            <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Otto</span>
-            <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Creator Army</span>
-            <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Beard.Com</span>
-            <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Finishr</span>
-            <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">CAO Partners</span>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14">
+            <img src="/logos/one-life-club.png" alt="One Life Club" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/ghost-builder.png" alt="Ghost Builder" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/otto.png" alt="Otto" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/creator-army.png" alt="Creator Army" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/beard-com.png" alt="Beard.Com" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/finishr.png" alt="Finishr" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/cao-v1.png" alt="CAO Partners" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
           </div>
         </div>
       </section>
