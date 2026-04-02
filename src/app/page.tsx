@@ -269,6 +269,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── What You Get ── */}
+      <section id="deliverables" className="relative z-10 py-16 md:py-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-10 md:mb-16">
+            <p className="text-accent text-xs font-bold tracking-[0.4em] uppercase mb-4">
+              Deliverables
+            </p>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight">
+              What You Get
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-px bg-transparent md:bg-border/40">
+            {([
+              { title: 'Your Brand Audit', desc: 'We jump on a 30-min Zoom. Review your website, assets, guidelines, existing creative. Extract what works, flag what does not.' },
+              { title: 'Your Design DNA', desc: 'We distill your brand into a complete design system. Colours, typography, spacing, tone of voice, visual hierarchy. All codified into a skill your AI understands.' },
+              { title: 'Your Creative Rules', desc: 'The things that make your brand yours. Layout preferences, image style, copy tone, do and do not lists. We capture the nuance that generic tools miss.' },
+              { title: 'Your Reference Library', desc: 'We curate a set of reference examples specific to your industry and aesthetic. Your AI learns from what good looks like for YOUR brand.' },
+              { title: 'Your Quality Gate', desc: 'A custom pre-ship checklist built around your brand standards. Your AI self-reviews every output against YOUR criteria before delivering.' },
+              { title: 'Your Growth Playbook', desc: 'SEO, CRO, and conversion patterns tailored to your market. Not generic best practices. Built around your actual customer journey.' },
+            ] as { title: string; desc: string }[]).map((card, i) => (
+              <div key={i} className="bg-[#0a0a0a] p-6 md:p-8 hover:bg-surface transition-colors">
+                <h3 className="text-xl font-black mb-4 text-[#fafafa]">{card.title}</h3>
+                <p className="text-muted text-sm leading-relaxed">{card.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── How It Works ── */}
       <section
         id="how-it-works"
@@ -375,17 +405,19 @@ export default function Home() {
             Already Built For
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16">
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">
-              CAO Partners
-            </span>
+            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">One Life Club</span>
             <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">
-              Otto
-            </span>
+            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Ghost Builder</span>
             <span className="text-border text-2xl hidden sm:inline">·</span>
-            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">
-              Ghost Builder
-            </span>
+            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Otto</span>
+            <span className="text-border text-2xl hidden sm:inline">·</span>
+            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Creator Army</span>
+            <span className="text-border text-2xl hidden sm:inline">·</span>
+            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Beard.Com</span>
+            <span className="text-border text-2xl hidden sm:inline">·</span>
+            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">Finishr</span>
+            <span className="text-border text-2xl hidden sm:inline">·</span>
+            <span className="text-[#fafafa] font-black text-xl tracking-tight opacity-70 hover:opacity-100 transition-opacity">CAO Partners</span>
           </div>
         </div>
       </section>
