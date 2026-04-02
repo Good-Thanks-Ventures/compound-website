@@ -402,13 +402,13 @@ export default function Home() {
             Already Built For
           </p>
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-14">
-            <a href="https://onelifeclub.com" target="_blank" rel="noopener noreferrer"><img src="/logos/one-life-club.png" alt="One Life Club" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" /></a>
-            <a href="https://ghostbuilder.com" target="_blank" rel="noopener noreferrer"><img src="/logos/ghost-builder.png" alt="Ghost Builder" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" /></a>
-            <a href="https://openoperator.com" target="_blank" rel="noopener noreferrer"><img src="/logos/otto.png" alt="Otto" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" /></a>
-            <a href="https://creatorarmy.com" target="_blank" rel="noopener noreferrer"><img src="/logos/creator-army.png" alt="Creator Army" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" /></a>
-            <a href="https://beard.com" target="_blank" rel="noopener noreferrer"><img src="/logos/beard-com.png" alt="Beard.Com" className="h-6 md:h-7 w-auto opacity-70 hover:opacity-100 transition-opacity" /></a>
-            <a href="https://finishr.com" target="_blank" rel="noopener noreferrer"><img src="/logos/finishr.png" alt="Finishr" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" /></a>
-            <a href="https://caopartners.com.au" target="_blank" rel="noopener noreferrer"><img src="/logos/cao-v1.png" alt="CAO Partners" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" /></a>
+            <img src="/logos/one-life-club.png" alt="One Life Club" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/ghost-builder.png" alt="Ghost Builder" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/otto.png" alt="Otto" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/creator-army.png" alt="Creator Army" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/beard-com.png" alt="Beard.Com" className="h-6 md:h-7 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/finishr.png" alt="Finishr" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/logos/cao-v1.png" alt="CAO Partners" className="h-8 md:h-10 w-auto opacity-70 hover:opacity-100 transition-opacity" />
           </div>
         </div>
       </section>
