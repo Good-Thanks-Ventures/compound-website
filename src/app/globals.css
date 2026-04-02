@@ -1,0 +1,213 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-accent: #c5d82d;
+  --color-surface: #111111;
+  --color-elevated: #1a1a1a;
+  --color-muted: #888888;
+  --color-border: #1e1e1e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Grain / noise texture overlay */
+.noise-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.038;
+  z-index: 2;
+  mix-blend-mode: overlay;
+}
+
+/* FAQ accordion */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::marker {
+  display: none;
+}
+
+.faq-icon {
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+details[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+@keyframes shine-pulse {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* ── Cybercore Background ── */
+.scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.floor {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  right: -10%;
+  height: 60%;
+  background:
+    linear-gradient(transparent 65%, rgba(197, 216, 45, 0.03) 100%),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 99px,
+      rgba(197, 216, 45, 0.06) 99px,
+      rgba(197, 216, 45, 0.06) 100px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 99px,
+      rgba(197, 216, 45, 0.06) 99px,
+      rgba(197, 216, 45, 0.06) 100px
+    );
+  transform: perspective(500px) rotateX(60deg);
+  transform-origin: bottom center;
+  animation: moveGrid 8s linear infinite;
+}
+
+.floor::after {
+  content: '';
+  position: absolute;
+  bottom: -10%;
+  left: 25%;
+  width: 50%;
+  height: 30%;
+  background: radial-gradient(ellipse, rgba(197, 216, 45, 0.15), transparent 70%);
+  animation: floorGlow 4s ease-in-out infinite;
+  filter: blur(40px);
+}
+
+.main-column {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to top, rgba(197, 216, 45, 0.4), transparent 60%);
+  animation: mainGlow 3s ease-in-out infinite alternate;
+}
+
+.main-column::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(197, 216, 45, 0.3), transparent 70%);
+  filter: blur(20px);
+}
+
+.light-stream-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.light-beam {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  animation-name: rise, fade;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.light-beam.primary {
+  background: linear-gradient(to top, rgba(197, 216, 45, 0.6), transparent);
+  box-shadow: 0 0 8px rgba(197, 216, 45, 0.3);
+}
+
+.light-beam.secondary {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-5%);
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0;
+  }
+  5%, 85% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes floorGlow {
+  0%, 100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes mainGlow {
+  from {
+    opacity: 0.5;
+    filter: blur(30px);
+  }
+  to {
+    opacity: 0.7;
+    filter: blur(20px);
+  }
+}
+
+@keyframes moveGrid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100px -50px;
+  }
+}

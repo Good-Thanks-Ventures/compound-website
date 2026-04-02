@@ -1,0 +1,32 @@
+{
+  "name": "compound",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "12.38.0",
+    "jszip": "^3.10.1",
+    "lucide-react": "1.7.0",
+    "next": "^16.2.1",
+    "pdfkit": "^0.18.0",
+    "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-typed": "^2.0.12",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2"
+  }
+}
